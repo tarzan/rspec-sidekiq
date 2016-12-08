@@ -9,7 +9,7 @@ require 'action_mailer'
 
 require_relative 'support/init'
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+SimpleCov.formatters = [
   Coveralls::SimpleCov::Formatter,
   SimpleCov::Formatter::HTMLFormatter
 ]
